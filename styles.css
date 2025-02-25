@@ -1,16 +1,17 @@
 .calculator {
     width: 250px;
     margin: 100px auto;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
   }
   #display {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
+    font-size: 24px;
+    text-align: right;
+    color: blue; 
   }
+  
   .buttons button {
     width: 50px;
     height: 50px;
@@ -20,4 +21,64 @@
   }
   .buttons button:hover {
     background-color: #ccc;
+  }
+  
+/* Style for number buttons */
+button {
+  font-size: 20px;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/* Color for number buttons (0-9) */
+
+
+/* Color for operator buttons (+, -, *, /, ^, =) */
+button:nth-child(3), 
+button:nth-child(13),
+button:nth-child(15),
+button:nth-child(16), 
+button:nth-child(17), 
+button:nth-child(2), 
+button:nth-child(18), 
+button:nth-child(19) {
+  background-color: orange;
+  color: white;
+}
+
+button:nth-child(n+4):nth-child(-n+12) {
+  background-color: lightblue;
+  color: black;
+}
+button:nth-child(14) {
+  background-color: lightblue;
+  color: black;
+}
+/* Clear button (C) */
+button:nth-child(1) {
+  background-color: red;
+  color: white;
+}
+
+button:nth-child(17) {
+  background-color: green;
+  color: white;
+}
+
+/* Hover effects */
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+  
+  h1{
+    color:blueviolet;
+    text-align:center;
   }
